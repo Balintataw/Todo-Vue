@@ -11,9 +11,9 @@
 </template>
 
 <script>
+import sweetalert from 'sweetalert';
 import TodoList from './components/TodoList';
 import CreateTodo from './components/CreateTodo';
-import sweetalert from 'sweetalert'
 
 export default {
   name: 'App',
@@ -45,7 +45,7 @@ export default {
   methods: {
     createTodo(newTodo) {
       this.todos.push(newTodo);
-      sweetalert('Success!', 'To-Do created!', 'success')
+      sweetalert('Success!', 'To-Do created!', 'success');
     },
   },
 };
